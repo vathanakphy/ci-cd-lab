@@ -1,6 +1,15 @@
 import express from 'express';
 const app = express();
+
 app.get('/', (req, res) => {
- res.status(200).send('Hello, GitHub Actions!');
+    res.status(200).send('Hello, GitHub Actions!');
 });
+
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        status: 'UP',
+    });
+
+});
+
 export default app;
