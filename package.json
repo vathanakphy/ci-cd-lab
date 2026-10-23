@@ -12,7 +12,7 @@
     "start": "node server.js",
     "test": "mocha",
     "lint": "eslint .",
-    "coverage": "c8 --exclude='.pnp.*' mocha"
+    "coverage": "c8 --reporter=text --reporter=html --exclude='.pnp.*' mocha"
   },
   "dependencies": {
     "express": "^5.1.0"
